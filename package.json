@@ -1,21 +1,29 @@
 {
-  "name": "taskmanager",
-  "version": "1.0.0",
-  "main": "app.js",
-  "scripts": {
-    "start": "nodemon app.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "heroku": "^7.62.0",
-    "mongoose": "^6.5.3"
-  },
-  "devDependencies": {
+    "mongoose": "^6.5.3",
     "nodemon": "^2.0.19"
   },
-  "description": ""
+  "name": "taskmanager",
+  "description": "��#\u0000 \u0000T\u0000a\u0000s\u0000k\u0000M\u0000a\u0000n\u0000a\u0000g\u0000e\u0000r\u0000\r\u0000 \u0000",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start":"nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakeshbodavula/TaskManager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakeshbodavula/TaskManager/issues"
+  },
+  "homepage": "https://github.com/rakeshbodavula/TaskManager#readme"
 }
