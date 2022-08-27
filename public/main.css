@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400|Inconsolata:400');
-
 *,
 ::after,
 ::before {
   box-sizing: border-box;
 }
-
 :root {
   --primary-0: #f0efff;
   --primary-50: #d8d6ff;
@@ -20,6 +18,7 @@
   --primary-900: #282566;
   --primary-1000: #191740;
   --primary-1100: #0a0919;
+
   --grey-0: #fafbfc;
   --grey-50: #f2f4f8;
   --grey-100: #eaedf3;
@@ -41,10 +40,11 @@
   --green-light: #d1e7dd;
   --green-dark: #0f5132;
 
-  /* typography */
+  
   --headingFont: 'Inconsolata', monospace;
   --bodyFont: 'Montserrat', sans-serif;
   --smallText: 0.7em;
+
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-1000);
   --borderRadius: 0.25rem;
@@ -117,17 +117,16 @@ ul {
   padding: 0;
   list-style-type: none;
 }
-
 a {
   text-decoration: none;
 }
+
 
 .btn {
   cursor: pointer;
   appearance: none;
   color: var(--white);
   background: var(--primary-500);
-  background: rgb(255, 170, 12);
   border: none;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
@@ -142,23 +141,19 @@ a {
   background: var(--primary-700);
   box-shadow: var(--shadow-2);
 }
-
 button.small {
   padding: 0.25rem 0.5rem;
   font-size: var(--smallText);
 }
-
 button.hipster {
   color: var(--primary-500);
   background: var(--primary-50);
   box-shadow: var(--shadow-1);
 }
-
 button.hipster:hover {
   background: var(--primary-100);
   box-shadow: var(--shadow-2);
 }
-
 button.block {
   width: 100%;
 }
@@ -170,7 +165,6 @@ form {
   box-shadow: var(--shadow-2);
   padding: 2rem 2.5rem;
 }
-
 label {
   display: block;
   font-size: var(--smallText);
@@ -187,11 +181,9 @@ textarea {
   border-color: transparent;
   border: 1px solid var(--grey-300);
 }
-
 .form-row {
   margin-bottom: 1rem;
 }
-
 textarea {
   width: 100%;
   height: 7rem;
@@ -200,7 +192,6 @@ textarea {
 ::placeholder {
   color: var(--grey-600);
 }
-
 .form-alert {
   color: var(--red-dark);
   letter-spacing: var(--letterSpacing);
@@ -214,31 +205,25 @@ textarea {
   margin: 0 auto;
   margin-top: 6rem;
 }
-
 .task-form h4 {
   text-align: center;
 }
-
 .task-form .form-alert {
   margin-top: 1rem;
 }
-
 .submit-btn {
   width: 100%;
   margin-top: 1rem;
 }
-
 @media screen and (min-width: 576px) {
   .form-control {
     display: flex;
   }
-
   .task-input {
     border-radius: 0;
     border-top-left-radius: var(--borderRadius);
     border-bottom-left-radius: var(--borderRadius);
   }
-
   .submit-btn {
     margin-top: 0;
     width: 175px;
@@ -247,16 +232,12 @@ textarea {
     border-bottom-right-radius: var(--borderRadius);
   }
 }
-
-form> :first-child {
+form > :first-child {
   margin-top: 0;
 }
-
-form> :last-child {
+form > :last-child {
   margin-bottom: 0;
 }
-
-
 .alert {
   padding: 0.375rem 0.75rem;
   margin-bottom: 1rem;
@@ -268,21 +249,16 @@ form> :last-child {
   color: var(--green-dark);
   background-color: var(--green-light);
 }
-
 .alert-danger {
   color: var(--red-dark);
   background-color: var(--red-light);
 }
-
 .text-danger {
   color: var(--red-dark);
 }
-
 .text-success {
   color: var(--green-dark);
 }
-
-
 @keyframes spinner {
   to {
     transform: rotate(360deg);
@@ -297,7 +273,6 @@ form> :last-child {
   border-top-color: var(--clr-primary-5);
   animation: spinner 0.6s linear infinite;
 }
-
 .loading {
   margin: 0 auto;
 }
@@ -305,7 +280,6 @@ form> :last-child {
 .form-loading {
   position: relative;
 }
-
 .form-loading::before {
   background: var(--white);
   position: absolute;
@@ -331,11 +305,9 @@ form> :last-child {
   animation: spinner 0.6s linear infinite;
 }
 
-
 .empty-list {
   text-align: center;
 }
-
 .tasks-container {
   width: 100%;
   width: 90vw;
@@ -344,12 +316,10 @@ form> :last-child {
   margin-top: 2rem;
   padding-bottom: 4rem;
 }
-
 .tasks {
   display: grid;
   gap: 1rem;
 }
-
 .single-task {
   padding: 1rem 2.5rem;
   background: var(--white);
@@ -360,15 +330,12 @@ form> :last-child {
   justify-content: space-between;
   align-items: center;
 }
-
 .single-task:hover {
   box-shadow: var(--shadow-4);
 }
-
 .single-task h5 {
   margin-bottom: 0;
 }
-
 .single-task span {
   display: inline-block;
   width: 0.5rem;
@@ -376,31 +343,25 @@ form> :last-child {
   margin-left: -1.25rem;
   margin-right: 1.5rem;
 }
-
 .single-task .fa-check-circle {
   font-size: 1rem;
   color: var(--green-dark);
   visibility: hidden;
 }
-
 .task-completed h5 {
   text-decoration: line-through;
 }
-
 .task-completed .fa-check-circle {
   visibility: visible;
 }
-
 .loading-text {
   visibility: hidden;
 }
-
 .task-links {
   display: flex;
   align-items: center;
   gap: 0 0.5rem;
 }
-
 .delete-btn,
 .edit-link {
   background: transparent;
@@ -408,11 +369,9 @@ form> :last-child {
   border: transparent;
   cursor: pointer;
 }
-
 .edit-link {
   color: var(--green-dark);
 }
-
 .delete-btn {
   color: var(--red-dark);
 }
@@ -426,7 +385,6 @@ form> :last-child {
   margin-bottom: 0;
   margin-top: 0;
 }
-
 .single-task-form .form-control {
   display: grid;
   grid-template-columns: 150px 1fr;
@@ -444,7 +402,6 @@ form> :last-child {
 .task-edit-completed {
   width: auto;
 }
-
 .back-link {
   display: block;
   width: 250px;
@@ -453,7 +410,6 @@ form> :last-child {
   margin-top: 6rem;
   background: var(--black);
 }
-
 .back-link:hover {
   background: var(--black);
   opacity: 0.75;
